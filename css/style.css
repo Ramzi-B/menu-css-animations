@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Teko:400,700");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-family: 'Teko', Helvetica, Arial, sans-serif;
+  background: #1e1e22;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.menu-effect {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+.menu-effect .para {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  z-index: -2;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+nav a {
+  display: block;
+  padding: 1em 1.2em;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2196F3;
+}
+nav a:hover {
+  color: #777;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navbar {
+  background: #000;
+}
+.navbar .menu-parent {
+  position: relative;
+}
+.navbar .menu-parent .sub-menu {
+  position: absolute;
+  opacity: 1;
+  visibility: hidden;
+  z-index: -1;
+  -moz-transform: translateX(-15em);
+  -ms-transform: translateX(-15em);
+  -webkit-transform: translateX(-15em);
+  transform: translateX(-15em);
+  -moz-transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -o-transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -webkit-transition: all 0.3s linear, visibility 0s linear, z-index 0s linear;
+  -webkit-transition-delay: 0s, 0.3s, 0.01s;
+  transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.navbar .menu-parent:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  background: #000;
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -moz-transition-delay: 0s, 0s, 0.3s;
+  -o-transition-delay: 0s, 0s, 0.3s;
+  -webkit-transition-delay: 0s, 0s, 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+/* NAV 2 */
+.navbar2 {
+  background: #123;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.4);
+}
+.navbar2 .menu-parent {
+  position: relative;
+}
+.navbar2 .menu-parent .sub-menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 1;
+  z-index: -1;
+  -moz-transform: translateY(-4em);
+  -ms-transform: translateY(-4em);
+  -webkit-transform: translateY(-4em);
+  transform: translateY(-4em);
+  -moz-transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -o-transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -webkit-transition: all 0.3s linear, visibility 0s linear, z-index 0s linear;
+  -webkit-transition-delay: 0s, 0.3s, 0.01s;
+  transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.navbar2 .menu-parent:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  background: #123;
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -moz-transition-delay: 0s, 0s, 0.3s;
+  -o-transition-delay: 0s, 0s, 0.3s;
+  -webkit-transition-delay: 0s, 0s, 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+/* NAV 3 */
+.navbar3 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.navbar3 .menu-parent {
+  position: relative;
+}
+.navbar3 .menu-parent .sub-menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 1;
+  z-index: -1;
+  -moz-transform: rotate(-90deg) translateY(-5em) scale(0.4);
+  -ms-transform: rotate(-90deg) translateY(-5em) scale(0.4);
+  -webkit-transform: rotate(-90deg) translateY(-5em) scale(0.4);
+  transform: rotate(-90deg) translateY(-5em) scale(0.4);
+  -moz-transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -o-transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -webkit-transition: all 0.3s linear, visibility 0s linear, z-index 0s linear;
+  -webkit-transition-delay: 0s, 0.3s, 0.01s;
+  transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.navbar3 .menu-parent:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  background: #1e1e22;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -moz-transform: rotate(0deg) translateY(0%) scale(1);
+  -ms-transform: rotate(0deg) translateY(0%) scale(1);
+  -webkit-transform: rotate(0deg) translateY(0%) scale(1);
+  transform: rotate(0deg) translateY(0%) scale(1);
+  -moz-transition-delay: 0s, 0s, 0.3s;
+  -o-transition-delay: 0s, 0s, 0.3s;
+  -webkit-transition-delay: 0s, 0s, 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
+}
+
+/* NAV 4 */
+.navbar4 {
+  background: #004d40;
+}
+.navbar4 .menu-parent {
+  position: relative;
+}
+.navbar4 .menu-parent .sub-menu {
+  position: absolute;
+  visibility: hidden;
+  opacity: 1;
+  z-index: -1;
+  -moz-transform: scale(0.1) translateY(-20em);
+  -ms-transform: scale(0.1) translateY(-20em);
+  -webkit-transform: scale(0.1) translateY(-20em);
+  transform: scale(0.1) translateY(-20em);
+  -moz-transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -o-transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+  -webkit-transition: all 0.3s linear, visibility 0s linear, z-index 0s linear;
+  -webkit-transition-delay: 0s, 0.3s, 0.01s;
+  transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+.navbar4 .menu-parent:hover .sub-menu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+  background: #004d40;
+  -moz-transform: scale(1) translateY(0%);
+  -ms-transform: scale(1) translateY(0%);
+  -webkit-transform: scale(1) translateY(0%);
+  transform: scale(1) translateY(0%);
+  -moz-transition-delay: 0s, 0s, 0.3s;
+  -o-transition-delay: 0s, 0s, 0.3s;
+  -webkit-transition-delay: 0s, 0s, 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
+}
