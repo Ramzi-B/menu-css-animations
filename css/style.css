@@ -79,15 +79,19 @@ nav ul li {
     list-style-type: none;
 }
 
-.navbar {
-    background: #000;
-}
-
-.navbar .menu-parent {
+.navbar1 .menu-parent,
+.navbar2 .menu-parent,
+.navbar3 .menu-parent,
+.navbar4 .menu-parent {
     position: relative;
 }
 
-.navbar .menu-parent .sub-menu {
+/* Nav 1 */
+.navbar1 {
+    background: #000;
+}
+
+.navbar1 .menu-parent .sub-menu {
     position: absolute;
     opacity: 1;
     visibility: hidden;
@@ -103,7 +107,7 @@ nav ul li {
     transition: all 0.3s linear 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 
-.navbar .menu-parent:hover .sub-menu {
+.navbar1 .menu-parent:hover .sub-menu {
     visibility: visible;
     opacity: 1;
     z-index: 1;
@@ -122,10 +126,6 @@ nav ul li {
 .navbar2 {
     background: #123;
     box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.4);
-}
-
-.navbar2 .menu-parent {
-    position: relative;
 }
 
 .navbar2 .menu-parent .sub-menu {
@@ -164,10 +164,6 @@ nav ul li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.navbar3 .menu-parent {
-    position: relative;
-}
-
 .navbar3 .menu-parent .sub-menu {
     position: absolute;
     visibility: hidden;
@@ -203,10 +199,6 @@ nav ul li {
 /* NAV 4 */
 .navbar4 {
     background: #004d40;
-}
-
-.navbar4 .menu-parent {
-    position: relative;
 }
 
 .navbar4 .menu-parent .sub-menu {
